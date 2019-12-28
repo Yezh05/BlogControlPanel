@@ -1,8 +1,8 @@
 <template>
 	<div class="home">
-		<div class="navbardiv">
+		<div class="navbardiv" ref="navbardiv" id="navbardiv" >
 		<el-menu default-active="1" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" background-color="#545c64"
-		text-color="#fff" active-text-color="#ffd04b">
+		text-color="#fff" active-text-color="#ffd04b" style="border-right: none;">
 			<!-- <el-submenu index="1">
 				<template slot="title">
 					<i class="el-icon-location"></i>
@@ -41,7 +41,7 @@
 			</el-menu-item> -->
 		</el-menu>
 		</div>
-		<div class="contentdiv">
+		<div class="contentdiv" ref="contentdiv">
 			<router-view></router-view>
 		</div>
 		<!-- <div id="nav">
@@ -91,6 +91,9 @@
 		},
 		mounted:function(){
 			this.$router.push('/home/statistics');
+			this.$nextTick(()=>{
+				document.querySelector("#navbardiv").style.height = ""+this.$refs.contentdiv.offsetHeight+"px";
+			});
 		}
 	}
 </script>
@@ -126,12 +129,13 @@
 		
 	}
 	.contentdiv{
-		height: 100%;
+		/* height: 100%; */
 		width: calc(100% - 250px);
 		padding: 20px;
 		margin: 0 auto;
 		float: left;
 		text-align: center;
 		background-color: #BBB;
+		/* position: absolute; */
 	}
 </style>
