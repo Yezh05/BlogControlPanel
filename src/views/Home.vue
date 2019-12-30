@@ -27,7 +27,7 @@
 			</el-menu-item>
 			<el-menu-item index="2" v-on:click="openAbdout2">
 				<i class="el-icon-menu"></i>
-				<span slot="title">导航二
+				<span slot="title">说明
 				</span>
 				
 			</el-menu-item>
