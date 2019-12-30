@@ -91,9 +91,9 @@
 		},
 		mounted:function(){
 			this.$router.push('/home/statistics');
-			this.$nextTick(()=>{
+			/* this.$nextTick(()=>{
 				document.querySelector("#navbardiv").style.height = ""+this.$refs.contentdiv.offsetHeight+"px";
-			});
+			}); */
 		}
 	}
 </script>
@@ -126,14 +126,14 @@
 	.navbardiv{
 		height: 100%;
 		float: left;
-		
+		position: fixed;
 	}
 	.contentdiv{
 		/* height: 100%; */
-		width: calc(100% - 250px);
+		width: calc(100% - 240px);
 		padding: 20px;
 		margin: 0 auto;
-		float: left;
+		float: right;
 		text-align: center;
 		background-color: #BBB;
 		/* position: absolute; */
