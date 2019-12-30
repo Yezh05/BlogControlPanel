@@ -8,7 +8,7 @@
 					<div class="grid-content bg-purple">
 						<el-row>
 							<el-col :span="12">
-								<div style="border-radius: 5px;background-color: #fff;margin: 20px;"> <i class="el-icon-user-solid" id="el-icon"
+								<div class="icondiv" style="border-radius: 5px;background-color: #fff;margin: 20px;"> <i class="el-icon-user-solid" id="el-icon"
 									style="font-size: 30px;"></i></div>
 							</el-col>
 							<el-col :span="12" style="font-size: 30px;">
@@ -384,7 +384,11 @@
 		padding-top: 20px;
 		padding-bottom: 20px;
 	}
-
+	#el-icon:hover{
+		background-color: #2C3E50;
+		border-radius: 5px;
+		color: #FFFFFF;
+	}
 	.textblock {
 		width: 100%;
 		height: 100%;
