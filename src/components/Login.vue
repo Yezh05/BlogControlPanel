@@ -24,7 +24,7 @@
 				if ('' == this.inputPassword || '' == this.inputUsername) {
 					alert('请输入用户名和密码');
 				} else {
-					if ('1' == this.inputPassword && 'admin' == this.inputUsername) {
+					if ('admin' == this.inputPassword && 'admin' == this.inputUsername) {
 						Cookies.remove('username');
 						Cookies.set('username', this.inputUsername);
 						this.$router.push({

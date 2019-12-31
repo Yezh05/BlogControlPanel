@@ -29,7 +29,7 @@
 				var Chart2 = echarts.init(this.$refs.Chart2);
 				Chart2.setOption({
 					title: {
-						text: '饼图'
+						text: '博客数据'
 					},
 					series: [{
 						name: '访问来源',
@@ -63,7 +63,7 @@
 				var Chart3 = echarts.init(this.$refs.Chart3);
 				Chart3.setOption({
 					title: {
-						text: '柱状图'
+						text: '博客数据'
 					},
 					tooltip: {
 						trigger: 'axis',
